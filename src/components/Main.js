@@ -8,7 +8,7 @@ const Main = (props) => {
 
     const [ people, setPeople ] = useState(null);
 
-    const URL = "https://person-app-backend-x03p.onrender.com/people";
+    const URL = "https://person-app-backend-x03p.onrender.com/people/";
     const getPeople = async () => {
         const response = await fetch(URL);
         const data = await response.json();
